@@ -1,0 +1,189 @@
+ /* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* section Styles */
+
+section {
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+section nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section nav ul li {
+    margin-right: 20px;
+}
+
+section nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    background-image: linear-gradient(to bottom, #333, #555);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Features Section Styles */
+
+.features {
+    background-color: #f9f9f9;
+    padding: 2em;
+}
+
+.features h2 {
+    margin-top: 0;
+}
+
+.features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.features i {
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Call-to-Action Section Styles */
+
+.call-to-action {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    margin-top: 0;
+}
+
+.call-to-action p {
+    margin-bottom: 20px;
+}
+
+.call-to-action form {
+    display: flex;
+    justify-content: center;
+}
+
+.call-to-action input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.call-to-action button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .features ul {
+        flex-direction: column;
+    }
+    .features li {
+        margin-bottom: 20px;
+    }
+    .call-to-action form {
+        flex-direction: column;
+    }
+    .call-to-action input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero {
+        height: 30vh;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .features ul {
+        padding: 0 20px;
+    }
+    .features li {
+        margin-bottom: 10px;
+    }
+    .call-to-action form {
+        padding: 0 20px;
+    }
+    .call-to-action input {
+        padding: 10px;
+    }
+}
